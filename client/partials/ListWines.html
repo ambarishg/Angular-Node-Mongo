@@ -1,0 +1,9 @@
+Partial1 Loaded!
+<br />
+<ul>
+    <li ng-repeat="wine in wines | orderBy:'name'">{{ wine.name }}  <a href="#/EditWines/{{ wine._id }}">Edit</a> </li>
+</ul>
+<br />
+<div>
+    <a href="#/NewWines">New</a>
+</div>
