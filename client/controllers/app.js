@@ -8,7 +8,7 @@ WineApp.config(function($routeProvider, $locationProvider) {
   	// NewWines
     .when('/NewWines', {controller: CreateController, templateUrl: '/partials/DetailsWines.html'})
 
-    // NewWines
+    // EditWines
     .when('/EditWines/:id', {controller: EditController, templateUrl: '/partials/DetailsWines.html'})
 
     .otherwise({redirectTo: '/'})

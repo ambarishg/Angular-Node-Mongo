@@ -1,5 +1,6 @@
 function List ($scope, $http) {
 
+
 $http.get('/wines/all').
     success(
     function(data, status, headers, config) {
@@ -23,7 +24,7 @@ function CreateController($scope, $http,$location) {
     }
 
     $scope.wine = wine; 
-    $scope.action = "Save" ;
+    $scope.action = "Add" ;
 
     $scope.save = function() 
     {
@@ -50,7 +51,7 @@ function EditController($scope, $http,$location,$routeParams) {
     }
 
     $scope.wine = wine; 
-    $scope.action = "Save" ;
+    $scope.action = "Edit" ;
 
     console.log ( " ID of the wine is " + $routeParams.id) ;
     
